@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,17 @@
 		4192756B2741B14200ACA9F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4192756A2741B14200ACA9F0 /* Assets.xcassets */; };
 		4192756E2741B14200ACA9F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4192756D2741B14200ACA9F0 /* Preview Assets.xcassets */; };
 		419275712741B14200ACA9F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4192756F2741B14200ACA9F0 /* LaunchScreen.storyboard */; };
+		419275792741B1B400ACA9F0 /* MemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419275782741B1B400ACA9F0 /* MemeViewModel.swift */; };
+		4192757B2741B1FB00ACA9F0 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192757A2741B1FB00ACA9F0 /* State.swift */; };
+		4192757F2741B27F00ACA9F0 /* MemeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192757E2741B27F00ACA9F0 /* MemeResponse.swift */; };
+		419275812741B29200ACA9F0 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419275802741B29200ACA9F0 /* Meme.swift */; };
+		419275832741BC6F00ACA9F0 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419275822741BC6F00ACA9F0 /* APICall.swift */; };
+		419275892741DA4B00ACA9F0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 419275882741DA4B00ACA9F0 /* Alamofire */; };
+		419275912741E2AA00ACA9F0 /* MemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419275902741E2AA00ACA9F0 /* MemeList.swift */; };
+		419275932741E2CA00ACA9F0 /* MemeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419275922741E2CA00ACA9F0 /* MemeRow.swift */; };
+		419275952741E2EB00ACA9F0 /* MemeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419275942741E2EB00ACA9F0 /* MemeDetail.swift */; };
+		419275992742E34000ACA9F0 /* RemoteImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419275982742E34000ACA9F0 /* RemoteImageLoader.swift */; };
+		4192759B2742E67300ACA9F0 /* ImageViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192759A2742E67300ACA9F0 /* ImageViewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,16 @@
 		4192756D2741B14200ACA9F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		419275702741B14200ACA9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		419275722741B14200ACA9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		419275782741B1B400ACA9F0 /* MemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeViewModel.swift; sourceTree = "<group>"; };
+		4192757A2741B1FB00ACA9F0 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		4192757E2741B27F00ACA9F0 /* MemeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeResponse.swift; sourceTree = "<group>"; };
+		419275802741B29200ACA9F0 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		419275822741BC6F00ACA9F0 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		419275902741E2AA00ACA9F0 /* MemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeList.swift; sourceTree = "<group>"; };
+		419275922741E2CA00ACA9F0 /* MemeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeRow.swift; sourceTree = "<group>"; };
+		419275942741E2EB00ACA9F0 /* MemeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeDetail.swift; sourceTree = "<group>"; };
+		419275982742E34000ACA9F0 /* RemoteImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageLoader.swift; sourceTree = "<group>"; };
+		4192759A2742E67300ACA9F0 /* ImageViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				419275892741DA4B00ACA9F0 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +78,12 @@
 		419275632741B13E00ACA9F0 /* Memer */ = {
 			isa = PBXGroup;
 			children = (
-				419275642741B13F00ACA9F0 /* AppDelegate.swift */,
-				419275662741B13F00ACA9F0 /* SceneDelegate.swift */,
-				419275682741B13F00ACA9F0 /* ContentView.swift */,
+				4192758F2741E26A00ACA9F0 /* Views */,
+				4192758E2741E24500ACA9F0 /* Common */,
+				4192758D2741E23500ACA9F0 /* Utils */,
+				4192758C2741E22500ACA9F0 /* API */,
+				4192758B2741E1F900ACA9F0 /* ViewModels */,
+				4192758A2741E1DE00ACA9F0 /* Models */,
 				4192756A2741B14200ACA9F0 /* Assets.xcassets */,
 				4192756F2741B14200ACA9F0 /* LaunchScreen.storyboard */,
 				419275722741B14200ACA9F0 /* Info.plist */,
@@ -73,6 +98,61 @@
 				4192756D2741B14200ACA9F0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4192758A2741E1DE00ACA9F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				419275802741B29200ACA9F0 /* Meme.swift */,
+				4192757E2741B27F00ACA9F0 /* MemeResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4192758B2741E1F900ACA9F0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				419275782741B1B400ACA9F0 /* MemeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4192758C2741E22500ACA9F0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				419275822741BC6F00ACA9F0 /* APICall.swift */,
+				419275982742E34000ACA9F0 /* RemoteImageLoader.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4192758D2741E23500ACA9F0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4192757A2741B1FB00ACA9F0 /* State.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4192758E2741E24500ACA9F0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				419275662741B13F00ACA9F0 /* SceneDelegate.swift */,
+				419275642741B13F00ACA9F0 /* AppDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4192758F2741E26A00ACA9F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				419275682741B13F00ACA9F0 /* ContentView.swift */,
+				419275902741E2AA00ACA9F0 /* MemeList.swift */,
+				419275922741E2CA00ACA9F0 /* MemeRow.swift */,
+				419275942741E2EB00ACA9F0 /* MemeDetail.swift */,
+				4192759A2742E67300ACA9F0 /* ImageViewContainer.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +171,9 @@
 			dependencies = (
 			);
 			name = Memer;
+			packageProductDependencies = (
+				419275882741DA4B00ACA9F0 /* Alamofire */,
+			);
 			productName = Memer;
 			productReference = 419275612741B13E00ACA9F0 /* Memer.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +202,9 @@
 				Base,
 			);
 			mainGroup = 419275582741B13E00ACA9F0;
+			packageReferences = (
+				419275872741DA4A00ACA9F0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 419275622741B13E00ACA9F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,9 +232,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4192759B2742E67300ACA9F0 /* ImageViewContainer.swift in Sources */,
+				419275992742E34000ACA9F0 /* RemoteImageLoader.swift in Sources */,
 				419275652741B13F00ACA9F0 /* AppDelegate.swift in Sources */,
+				419275812741B29200ACA9F0 /* Meme.swift in Sources */,
+				419275932741E2CA00ACA9F0 /* MemeRow.swift in Sources */,
+				4192757F2741B27F00ACA9F0 /* MemeResponse.swift in Sources */,
+				419275952741E2EB00ACA9F0 /* MemeDetail.swift in Sources */,
 				419275672741B13F00ACA9F0 /* SceneDelegate.swift in Sources */,
+				419275792741B1B400ACA9F0 /* MemeViewModel.swift in Sources */,
+				419275912741E2AA00ACA9F0 /* MemeList.swift in Sources */,
+				4192757B2741B1FB00ACA9F0 /* State.swift in Sources */,
 				419275692741B13F00ACA9F0 /* ContentView.swift in Sources */,
+				419275832741BC6F00ACA9F0 /* APICall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +436,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		419275872741DA4A00ACA9F0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		419275882741DA4B00ACA9F0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 419275872741DA4A00ACA9F0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 419275592741B13E00ACA9F0 /* Project object */;
 }
